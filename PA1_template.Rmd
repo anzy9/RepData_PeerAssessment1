@@ -9,7 +9,6 @@ output:
 ## Loading and preprocessing the data
 ```{r}
 #This will setup the directory for the assignent, It will create directory, download the files from the web and will unzip the files to be use for the analysis
-setwd("F:/Shared/Drive/AnjaliS/Coursera/RepData/Week2")
 mainDir<-getwd()
 subDir<-"Course5Assignment1"
 if (file.exists(subDir)){

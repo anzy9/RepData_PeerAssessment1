@@ -5,7 +5,6 @@
 
 ```r
 #This will setup the directory for the assignent, It will create directory, download the files from the web and will unzip the files to be use for the analysis
-setwd("F:/Shared/Drive/AnjaliS/Coursera/RepData/Week2")
 mainDir<-getwd()
 subDir<-"Course5Assignment1"
 if (file.exists(subDir)){
@@ -51,7 +50,7 @@ qplot(totalStepperday$Steps, xlab='Total steps per day', ylab='Frequency')
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template2_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 
 ### 3 Calculate and report the mean and median of the total number of steps taken per day
@@ -88,7 +87,7 @@ g<-g+theme_bw() +ggtitle("average daily activity pattern")+theme(
 g
 ```
 
-![](PA1_template2_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ### 2 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -127,7 +126,7 @@ names(sumofStepsperday)<-c("Day","Steps")
 qplot(sumofStepsperday$Steps, xlab='Total steps per day', ylab='Frequency')
 ```
 
-![](PA1_template2_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 mean(sumofStepsperday[,2])
@@ -180,4 +179,4 @@ xyplot(Steps ~ Interval | DayType, daytypeData, type = "l", layout = c(1, 2),
        xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template2_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
